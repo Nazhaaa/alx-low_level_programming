@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "triple.h"
+#include "main.h"
 int main (void){
 	 putchar(ch);
 	 return (0);
