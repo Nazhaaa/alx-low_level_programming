@@ -1,5 +1,9 @@
-#include <stdio.h>
+#include "main.h"
+/**
+ * main print _putchar
+ * return 0 sucess
+ */
 int main (void){
-	 putchar('\n');
+	 putchar('_putchar\n');
 	 return (0);
 	 }
