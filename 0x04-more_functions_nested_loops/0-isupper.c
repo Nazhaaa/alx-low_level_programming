@@ -1,19 +1,15 @@
-1-isdigit.c
-
 #include "main.h"
-
 /**
- * _isdigit - check if numbers are 0 - 9
- * @c: char to be checked
- *
- * Return: 0 or 1
+ * _isupper - checks for uppercase character.
+ * @c: character
+ * written by safae
+ * Return: 1 if c is uppercase 0 otherwise
  */
 
-int _isdigit(int c)
+int _isupper(int c)
 {
-if (c >= '0' && c <= '9')
-return (1);
-else
-return (0);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
-
