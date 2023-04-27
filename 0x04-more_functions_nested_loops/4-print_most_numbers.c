@@ -1,21 +1,21 @@
 #include "main.h"
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
+ * print_most_numbers - prints the numbers from 0 to 9 followed by a new line.
  * written by sfiya
  */
 
-void more_numbers(void)
+void print_most_numbers(void)
 {
-int i, j;
+	char s = '0';
 
-for (i = 0; i < 10; i++)
-{
-for (j = 0; j <= 14; j++)
-{
-if (j >= 10)
-_putchar('1');
-_putchar(j % 10 + '0');
+	while (s <= '9')
+	{
+		if (s != '2' && s != '4')
+		{
+			_putchar(s);
+		}
+	s++;
+	}
+	_putchar('\n');
 }
-_putchar('\n');
-}
-}
+
