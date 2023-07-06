@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- * get_endianness - checks if a machine is little or big endian
- * Return: 0 for big, 1 for little
+ * get_bit - returns the value of a bit at an index in a decimal number
+ * @n: number to search
+ * @index: index of the bit
+ *
+ * Return: value of the bit
  */
-int get_endianness(void)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i = 1;
-	char *c = (char *) &i;
+	int bittyn;
 
-	return (*c);
+	if (index > 63)
+		return (-1);
+
+	bittyn = (n >> index) & 1;
+
+	return (bittyn);
 }
